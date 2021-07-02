@@ -1,3 +1,3 @@
 # clase10
 
-Ejercicio aplicacion box CCS
+Ejercicio aplicacion flexbox y media query
