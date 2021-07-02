@@ -1,123 +1,122 @@
-body {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-flow: column nowrap;
-  align-content: center;
-}
-
 * {
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
+/* Barra Descuentos */
 .descuento {
   display: flex;
+  height: 38px;
+  background-color: #1cd1b0;
   align-items: center;
-  background-color: #d1891c;
-  height: 61px;
-  font-size: 35px;
-  padding-left: 67px;
-  color: #333333;
+  padding-left: 10px;
 }
 
+/*Barra Super Heroes*/
 .titulo {
   display: flex;
-  align-items: center;
+  height: 101px;
   background-color: #00669f;
-  height: 162px;
-  padding-left: 67px;
+  align-items: center;
+  padding-left: 28px;
   position: sticky;
   top: 0;
-  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
   z-index: 10;
-  font-size: 40px;
-  color: #ffff;
 }
+
+/* Contenedor Cartas */
 
 .contenedor {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
-  padding: 101px;
+  padding: 120px;
 }
 
+/* Cartas */
 .card {
   display: flex;
-  flex-direction: column;
-  width: 805px;
-  height: 1365px;
-  border: red solid 2px;
-  margin-right: 210px;
-  margin-bottom: 180px;
-  border-radius: 67px 67px 0 0;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 529px;
+
+  border-radius: 25px 25px 0 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #F3F3F3;
 }
+
+/*Fondo Cartas */
 .bkgd {
   position: relative;
-  top: -116px;
+  width: 300px;
+  height: 194px;
+  top: -35px;
 }
 
+/*Corazon*/
+.heart {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 21px;
+  z-index: 9;
+}
+
+/*Foto de perfil*/
 .profile {
   position: relative;
-  width: 352px;
-  height: 352px;
-  bottom: 370px;
-  left: 226px;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
-  z-index: 9;
+  left: 90px;
+  top: -127px;
 }
 
-.heart {
-  width: 67px;
-  height: 67px;
-  padding: 48px 0 0 56px;
-  z-index: 9;
-}
-
-h3 {
-  position: relative;
-  font-size: 67px;
-  text-align: center;
-  bottom: 26%;
-}
-
+/*Textos Cards*/
 p {
   position: relative;
-  padding: 0 44px 0 43px;
-  font-size: 33px;
-  bottom: 24%;
+  padding: 0 17px 0 16px;
+  bottom: 104px;
+  width: 267px;
+  height: 113px;
+  font-size: 15px;
 }
 
-
-
-footer {
-  display: flex;
-  height: 162px;
+/*titulos card*/
+.card h3 {
+  position: relative;
+  text-align: center;
   width: 100%;
-  padding: 16px;
+  top: -120px;
+}
+
+/*Boton*/
+.btn {
+  position: relative;
   background-color: #00669f;
+  top: -25px;
+  text-align: center;
+  margin: auto;
+  padding: 10px 35px;
+  text-decoration: none;
   color: #ffff;
 }
 
-footer span{
-  width: 33%;
+/*Pie de Pagina*/
+footer {
   display: flex;
-}
-
-footer h4{
-  display: flex;
+  flex-direction: row;
+  height: 51px;
+  background-color: #00669f;
   align-items: center;
-  justify-content: center;
-  font-size: 33px;
+  color: #ffff;
 }
-
-footer img{
-  display: flex;
-  border: red solid 2px;
-  width: 268px;
-  height: 67px;
-  flex-direction: column;
-  align-self:flex-end;
-  align-content: flex-end;
-}
-
